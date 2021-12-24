@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Hind');
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+	overflow: hidden;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	color: #dee2e6;
+	/*background-color: #212529;*/
+	font-family: 'Hind', sans-serif;
+	text-transform: uppercase;
+}
+
+.arcade-container {
+	position: relative;
+	background-image: url("../assets/JRPINBALLFULLTABLE.jpeg");
+	background-position: 48% 67%;
+	background-repeat: no-repeat;
+	z-index: 0;
+}
+
+.pinball-layers {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100vh;
+}
+
+.banner-board {
+	background-image: url("../assets/IMG_5200.PNG");
+	z-index: 3;
+}
+
+.obsitacle-board {
+	background-image: url("../assets/IMG_5201.PNG");
+	z-index: 4;
+}
+
+/* .container {
+	position: relative;
+	line-height: 0;
+} */
+
+.score {
+	position: absolute;
+	top: 10px;
+	line-height: 1;
+}
+
+.score span {
+	font-size: 3.25rem;
+}
+
+.current-score {
+	left: 10px;
+}
+
+.high-score {
+	text-align: right;
+	right: 10px;
+}
+
+.trigger {
+  appearance: none;
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	bottom: 10px;
+  border: 0;
+	border-radius: 50%;
+  color: inherit;
+	background-color: #e64980;
+	text-align: center;
+	line-height: 80px;
+	font-size: 1.25rem;
+  text-transform: inherit;
+	cursor: pointer;
+	user-select: none;
+  outline: none;
+  z-index: 5;
+}
+
+.left-trigger {
+	left: 10px;
+	background: url("../assets/BOTON2.png") center center no-repeat;
+	background-size: 80px;
+
+}
+
+.right-trigger {
+	right: 60px;
+	background: url("../assets/BOTON2.png") center center no-repeat;
+	background-size: 80px;
+}
+
+canvas {
+	overflow: hidden;
+	border-radius: 5px;
+	box-shadow: 0 5px 25px;
+    background: url("../assets/IMG_5200.PNG") no-repeat 50% 50%;
+}
+
+/* responsive scaling, because pinball tables are tall */
+@media (min-height: 0px) {
+	.container { transform: scale(0.25); }
+}
+@media (min-height: 400px) {
+	.container { transform: scale(0.5); }
+}
+@media (min-height: 600px) {
+	.container { transform: scale(0.9); }
+}
+@media (min-height: 800px) {
+	.container { transform: scale(1.30); }
+}
