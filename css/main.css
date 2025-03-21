@@ -106,7 +106,8 @@ canvas {
 	overflow: hidden;
 	border-radius: 5px;
 	box-shadow: 0 5px 25px;
-    background: url("../assets/IMG_5200.PNG") no-repeat 50% 50%;
+  /* background: url("../assets/IMG_5200.PNG") no-repeat 50% 50%; */
+	/* background-image: url("../assets/IMG_5200.PNG") no-repeat 50% 50%; */
 }
 
 /* responsive scaling, because pinball tables are tall */

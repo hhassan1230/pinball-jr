@@ -11,7 +11,7 @@
 		APRON_RIGHT: '180 0 180 120 0 120 180 0'
 	};
 	const COLOR = {
-		BACKGROUND: 'none',
+		BACKGROUND: 'url("../assets/IMG_5200.PNG") no-repeat 50% 50%',	
 		OUTER: 'none',
 		INNER: 'none',
 		BUMPER: '#fab005',
