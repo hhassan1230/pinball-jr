@@ -19,7 +19,7 @@
 		PADDLE: '#e64980',
 		PINBALL: '#dee2e6'
 	};
-	const GRAVITY = 0.75;
+	const GRAVITY = 0.80; // simulate rolling on a slanted table .75
 	const WIREFRAMES = false;
 	const BUMPER_BOUNCE = 1.5;
 	const PADDLE_PULL = 0.002;

@@ -15,7 +15,11 @@ body {
 	align-items: center;
 	margin: 0;
 	color: #dee2e6;
-	/*background-color: #212529;*/
+	background-color: #212529;
+	background-image: url("../assets/JRPINBALLFULLTABLE.jpeg");
+	background-repeat: no-repeat;
+		background-size: 55% 211%;
+		background-position: 50% 50%;
 	font-family: 'Hind', sans-serif;
 	text-transform: uppercase;
 }
