@@ -36,16 +36,24 @@ body {
 	position: absolute;
 	top: 0;
 	left: 0;
-	height: 100vh;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
 }
 
 .banner-board {
-	background-image: url("../assets/IMG_5200.PNG");
+	/* background-image: url("../assets/IMG_5200.PNG"); */
+	background-position: 90px 50%;
+	background-repeat: no-repeat;
+	background-size: contain;
 	z-index: 3;
 }
 
 .obsitacle-board {
 	background-image: url("../assets/IMG_5201.PNG");
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
 	z-index: 4;
 }
 
@@ -58,6 +66,7 @@ body {
 	position: absolute;
 	top: 10px;
 	line-height: 1;
+	z-index: 5;
 }
 
 .score span {

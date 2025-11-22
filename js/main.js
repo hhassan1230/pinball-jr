@@ -17,7 +17,8 @@
 		BUMPER: '#fab005',
 		BUMPER_LIT: '#fff3bf',
 		PADDLE: '#e64980',
-		PINBALL: '#dee2e6'
+		PINBALL: '#dee2e6',
+		BALLDESIGN: 'url("../assets/ballv2.png") no-repeat'
 	};
 	const GRAVITY = 0.80; // simulate rolling on a slanted table .75
 	const WIREFRAMES = false;
@@ -85,7 +86,7 @@
 	function createStaticBodies() {
 		Matter.World.add(world, [
 			// table boundaries (top, bottom, left, right)
-			boundary(250, -30, 500, 100),
+			boundary(300, -30, 500, 100),
 			boundary(250, 830, 500, 100),
 			boundary(-30, 400, 100, 800),
 			boundary(530, 400, 100, 800),
@@ -236,7 +237,7 @@
 				group: stopperGroup
 			},
 			render: {
-				fillStyle: COLOR.PINBALL
+				fillStyle: COLOR.BALLDESIGN
 			}
 		});
 		Matter.World.add(world, pinball);
@@ -393,6 +394,7 @@
 			isStatic: true,
 			render: {
 				fillStyle: COLOR.BUMPER
+
 			}
 		});
 
