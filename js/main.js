@@ -237,7 +237,11 @@
 				group: stopperGroup
 			},
 			render: {
-				fillStyle: COLOR.BALLDESIGN
+				sprite: {
+					texture: '../assets/ballv1.png',
+					xScale: 0.5,
+					yScale: 0.5
+				}
 			}
 		});
 		Matter.World.add(world, pinball);
