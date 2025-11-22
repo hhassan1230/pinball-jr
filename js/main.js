@@ -100,9 +100,9 @@
 			wall(310, 140, 20, 40, COLOR.INNER),
 
 			// top bumpers (left, mid, right)
-			bumper(105, 250),
+			// bumper(105, 250),
 			bumper(225, 250),
-			bumper(345, 250),
+			// bumper(345, 250),
 
 			// bottom bumpers (left, right)
 			bumper(165, 340),
@@ -239,8 +239,8 @@
 			render: {
 				sprite: {
 					texture: '../assets/ballv1.png',
-					xScale: 0.5,
-					yScale: 0.5
+					xScale: 0.45,
+					yScale: 0.45
 				}
 			}
 		});
