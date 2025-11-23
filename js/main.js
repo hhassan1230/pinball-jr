@@ -100,9 +100,9 @@
 			wall(310, 140, 20, 40, COLOR.INNER),
 
 			// top bumpers (left, mid, right)
-			// bumper(105, 250),
+			// bumper(105, 250), // I commented this out 11/22/25
 			bumper(225, 250),
-			// bumper(345, 250),
+			// bumper(345, 250), // I commented this out 11/22/25
 
 			// bottom bumpers (left, right)
 			bumper(165, 340),
